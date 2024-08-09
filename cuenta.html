@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cuenta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
 </head>
 <body>
     <header class="header">
@@ -23,10 +24,6 @@
             </nav>
         </div>
     </header>    
-    <div class="capa">
-        <section class="titule">
-            <p>Bienvenido a XyZ</p>
-    </div>
 <!----Barra lateral--->
 <input type="checkbox" id="btn-menu">
 <div class="container-menu">
@@ -43,6 +40,35 @@
 <div>
     <audio autoplay loop src="/audio/Y2meta.app - 1 hour of _I have no enemies_ (128 kbps).mp3" types="audio/mp3"></audio>
 </div>
+
+<!---formato de registro--->
+<div class="sesion">
+    <div class="form-sesion">
+        <h1 id="titleSe">Registro</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameInput">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <p>Olvidaste tu contraseña <a href="#">Click aqui</a></p>
+            </div>
+            <div class="btn-field">
+                <button id="signUp" type="button">Registro</button>
+                <button id="signIn" type="button" class="disable">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="/js/cuenta.js"></script>
 <!----Pie de pagina--->
     <footer>
         <div class="container-footer">
